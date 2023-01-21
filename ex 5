@@ -1,0 +1,95 @@
+Program  using function
+1 . Return the full name of the person using function
+Program: 
+def name(x,y):
+    z=x+y
+    print(z)
+first=input("enter first:")
+second=input("enter second:")
+print(first,second)
+output:
+enter first:priyanka
+enter second:prakash
+priyanka Prakash
+
+2.write a python program to convert time hours into minutes
+Program:
+def convertion(hour):
+    min=hour*60
+    return min
+a=int(input("enter time in hour:"))
+print(convertion(a))
+output:
+enter time in hour:12
+720
+
+
+3.Calculate GCD of two numbers
+Program:
+n1=int(input("enter a number1:"))
+n2=int(input("enter a number2:"))
+a=n1
+b=n2
+while n1!=n2:
+    if n1>n2:
+        n1-=n2
+    else:
+        n2-=n1
+        print("GCD of",a,"and",b,"is",n1)
+output:
+enter a number1:36
+enter a number2:60
+GCD of 36 and 60 is 12
+
+4.Area and perimeter of triangle:
+Program:
+import math
+def triangle(s,a,b,c):
+    a=(s*(s-a)*(s-b)*(s-c))**0.5
+    return a
+s=float(input("enter s:"))
+a=float(input("Enter a:"))
+b=float(input("Enter b:"))
+c=float(input("Enter c:"))
+print("The area of triangle is:",triangle(s,a,b,c))
+def perimeter(a,b,c):
+    p=a+b+c
+    return p
+a=float(input("Enter a:"))
+b=float(input("Enter b:"))
+c=float(input("Enter c:"))
+print("The perimeter of triangle is:",perimeter(a,b,c))
+
+output:
+enter s:5.3
+Enter a:6.7
+Enter b:9.0
+Enter c:4.5
+The area of triangle is: 4.6864912247864075
+Enter a:2
+Enter b:3
+Enter c:4
+The perimeter of triangle is: 9.0
+
+5.Max of number:
+
+Program:
+def maximum(a,b):
+    if(a>=b):
+        return a
+    else:
+        return b
+a=int(input("Enter number1:"))
+b=int(input("Enter number2:"))
+print(maximum(a,b))
+
+output:
+Enter number1:666
+Enter number2:66
+666
+
+
+
+
+
+
